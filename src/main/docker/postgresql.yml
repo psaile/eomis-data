@@ -1,0 +1,11 @@
+version: '2'
+services:
+  data-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/data/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=data
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
